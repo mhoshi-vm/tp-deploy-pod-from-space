@@ -3,29 +3,28 @@ kind: Package
 metadata:
   annotations:
     capability.tanzu.vmware.com/provides: |
-      [{ "name": "deploy-pod-capability.tanzu.japan.com",
+      [{ "name": "k8s-service-capability.tanzu.japan.com",
          "displayName": "Deploy Pod Capability",
          "vendor": "VMware Tanzu",
          "description": "Allows deploying pod in space",
          "tags":["apps"],
          "groupVersionKinds": [
-           { "apiVersion": "v1", "kind": "Service" },
-           { "apiVersion": "apps/v1", "kind": "Deployment" }
+           { "apiVersion": "v1", "kind": "Service" }
          ]
        }
       ]
-  name: deploy-pod-capability.tanzu.japan.com.0.0.1
+  name: k8s-service-capability.tanzu.japan.com.0.0.1
 spec:
-  refName: deploy-pod-capability.tanzu.japan.com
+  refName: k8s-service-capability.tanzu.japan.com
   version: 0.0.1
   valuesSchema:
     openAPIv3:
-      title: deploy-pod-capability.tanzu-jp values schema
+      title: k8s-service-capability.tanzu-jp values schema
   template:
     spec:
       fetch:
         - git:
-            url: https://github.com/mhoshi-vm/tp-deploy-pod-from-space
+            url: https://github.com/mhoshi-vm/tp-k8s-service-from-space
             ref: origin/main
             subPath: manifests/
       template:

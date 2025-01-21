@@ -1,10 +1,10 @@
 apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: PackageMetadata
 metadata:
-  name: deploy-pod-capability.tanzu.japan.com
+  name: k8s-service-not-capability.tanzu.japan.com
 spec:
-  displayName: "TP Deploy Pod Capability"
-  shortDescription: "TP Deploy Pod Capability"
+  displayName: "TP K8s Service Not Capability"
+  shortDescription: "TP K8s Service Not Capability"
   supportDescription: "https://carvel.dev/"
   providerName: "VMware"
   maintainers:

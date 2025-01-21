@@ -1,18 +1,18 @@
 apiVersion: data.packaging.carvel.dev/v1alpha1
 kind: Package
 metadata:
-  name: deploy-pod-not-capability.tanzu.japan.com.0.0.1
+  name: k8s-service-not-capability.tanzu.japan.com.0.0.1
 spec:
-  refName: deploy-pod-not-capability.tanzu.japan.com
+  refName: k8s-service-not-capability.tanzu.japan.com
   version: 0.0.1
   valuesSchema:
     openAPIv3:
-      title: deploy-pod-not-capability.tanzu-jp values schema
+      title: k8s-service-not-capability.tanzu-jp values schema
   template:
     spec:
       fetch:
         - git:
-            url: https://github.com/mhoshi-vm/tp-deploy-pod-from-space
+            url: https://github.com/mhoshi-vm/tp-k8s-service-from-space
             ref: origin/main
             subPath: manifests/
       template:
