@@ -19,4 +19,4 @@ spec:
           paths: []
       deploy:
         - kapp:
-            rawOptions: ["--dangerous-allow-empty-list-of-resources"]
+            rawOptions: ["--dangerous-allow-empty-list-of-resources=true"]
