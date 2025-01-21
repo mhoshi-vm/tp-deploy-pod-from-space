@@ -18,4 +18,5 @@ spec:
       - ytt:
           paths: []
       deploy:
-        - kapp: {}
+        - kapp:
+            rawOptions: ["--dangerous-allow-empty-list-of-resources"]
