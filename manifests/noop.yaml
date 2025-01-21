@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    app.kubernetes.io/managed-by: deployment-capability
-  name: deployment-capability
+    app.kubernetes.io/managed-by: deploy-pod-capability
+  name: deploy-pod-capability
 ---
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: deployment-package-noop
-  namespace: deployment-capability
+  name: deploy-pod-package-noop
+  namespace: deploy-pod-capability
 data:
   noop: "true"
