@@ -9,7 +9,9 @@ metadata:
          "description": "Allows deploying pod in space",
          "tags":["Not for production"],
          "groupVersionKinds": [
-            { "apiVersion": "v1", "kind": "Pod" }
+            { "apiVersion": "v1", "kind": "Pod" },
+            { "apiVersion": "autoscaling/v2", "kind": "HorizontalPodAutoscaler" },
+            { "apiVersion": "v1", "kind": "Service" }
           ]
        }
       ]
