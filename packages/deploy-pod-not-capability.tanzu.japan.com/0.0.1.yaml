@@ -3,7 +3,7 @@ kind: Package
 metadata:
   name: deploy-pod-not-capability.tanzu.japan.com.0.0.1
 spec:
-  refName: deploy-pod-nc.tanzu.japan.com
+  refName: deploy-pod-not-capability.tanzu.japan.com
   version: 0.0.1
   valuesSchema:
     openAPIv3:

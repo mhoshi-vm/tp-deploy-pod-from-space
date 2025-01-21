@@ -15,7 +15,7 @@ metadata:
       ]
   name: deploy-pod-capability.tanzu.japan.com.0.0.1
 spec:
-  refName: deploy-pod.tanzu.japan.com
+  refName: deploy-pod-capability.tanzu.japan.com
   version: 0.0.1
   valuesSchema:
     openAPIv3:
