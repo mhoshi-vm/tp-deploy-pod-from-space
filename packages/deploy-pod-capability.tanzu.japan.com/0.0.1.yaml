@@ -9,9 +9,9 @@ metadata:
          "description": "Allows deploying pod in space",
          "tags":["apps"],
          "groupVersionKinds": [
-            { "apiVersion": "v1", "kind": "Pod" },
-            { "apiVersion": "v1", "kind": "Service" }
-          ]
+           { "apiVersion": "v1", "kind": "Service" },
+           { "apiVersion": "apps/v1", "kind": "Deployment" }
+         ]
        }
       ]
   name: deploy-pod-capability.tanzu.japan.com.0.0.1
