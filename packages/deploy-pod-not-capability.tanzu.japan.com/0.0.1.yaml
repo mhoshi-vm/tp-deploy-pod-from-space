@@ -14,6 +14,10 @@ spec:
           paths:
             base.yaml: ""
     spec:
+      fetch:
+        - inline:
+            paths:
+              base.yaml: ""
       template:
       - ytt:
           paths: []

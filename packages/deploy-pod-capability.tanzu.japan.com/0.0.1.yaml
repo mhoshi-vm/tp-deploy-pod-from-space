@@ -21,11 +21,11 @@ spec:
     openAPIv3:
       title: deploy-pod-capability.tanzu-jp values schema
   template:
-    fetch:
-      - inline:
-          paths:
-            base.yaml: ""
     spec:
+      fetch:
+        - inline:
+            paths:
+              base.yaml: ""
       template:
       - ytt:
           paths: []
