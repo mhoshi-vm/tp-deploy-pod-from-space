@@ -1,0 +1,11 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: PackageMetadata
+metadata:
+  name: deploy-pod-capability.tanzu.japan.com
+spec:
+  displayName: "TP Deploy Pod Capability"
+  shortDescription: "TP Deploy Pod Capability"
+  supportDescription: "https://carvel.dev/"
+  providerName: "VMware"
+  maintainers:
+  - name: "Machi Hoshino"

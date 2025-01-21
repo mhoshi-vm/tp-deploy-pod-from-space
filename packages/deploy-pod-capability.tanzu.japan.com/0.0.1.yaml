@@ -1,0 +1,29 @@
+apiVersion: data.packaging.carvel.dev/v1alpha1
+kind: Package
+metadata:
+  annotations:
+    capability.tanzu.vmware.com/provides: |
+      [{ "name": "deploy-pod-capability.tanzu.japan.com",
+         "displayName": "Deploy Pod Capability",
+         "vendor": "VMware Tanzu",
+         "description": "Allows deploying pod in space",
+         "tags":["Not for production"],
+         "groupVersionKinds": [
+            { "apiVersion": "v1", "kind": "Pod" }
+          ]
+       }
+      ]
+  name: deploy-pod-capability.tanzu.japan.com.0.0.1
+spec:
+  refName: deploy-pod.tanzu.japan.com
+  version: 0.0.1
+  valuesSchema:
+    openAPIv3:
+      title: deploy-pod-capability.tanzu-jp values schema
+  template:
+    spec:
+      template:
+      - ytt:
+          paths: []
+      deploy:
+        - kapp: {}
