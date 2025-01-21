@@ -4,9 +4,9 @@ metadata:
   annotations:
     capability.tanzu.vmware.com/provides: |
       [{ "name": "k8s-service-capability.tanzu.japan.com",
-         "displayName": "Deploy Pod Capability",
+         "displayName": "K8s Capability",
          "vendor": "VMware Tanzu",
-         "description": "Allows deploying pod in space",
+         "description": "Allows creating k8s service in space",
          "tags":["apps"],
          "groupVersionKinds": [
            { "apiVersion": "v1", "kind": "Service" }
