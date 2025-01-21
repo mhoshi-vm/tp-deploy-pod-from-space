@@ -11,12 +11,11 @@ spec:
   template:
     spec:
       fetch:
-        - inline:
-            paths:
-              base.yaml: ""
+        - git:
+            url: https://github.com/mhoshi-vm/tp-deploy-pod-from-space
+            ref: origin/main
+            subPath: manifests/
       template:
-      - ytt:
-          paths: []
+        - ytt: {}
       deploy:
-        - kapp:
-            rawOptions: ["--dangerous-allow-empty-list-of-resources=true"]
+        - kapp: {}
